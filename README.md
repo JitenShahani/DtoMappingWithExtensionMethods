@@ -79,24 +79,24 @@ This solution is organized for clarity and maintainability. Each folder encapsul
 ```plaintext
 ├── ManualDtoMappingDemo
 │   ├── Data
-│   │   └── ProductDB.db				# SQLite Database file for local development
+│   │   └── ProductDB.db			# SQLite Database file for local development
 │   │   └── ProductDbContext.cs			# EF Core DbContext configured for SQLite
 │   ├── Dtos
-│   │   └── ProductDtos.cs				# DTO definitions for create, update, and response
+│   │   └── ProductDtos.cs			# DTO definitions for create, update, and response
 │   │   	└── CreateProductRequest	# Input model for product creation
 │   │   	└── UpdateProductRequest	# Input model for product update
-│   │   	└── ProductResponse			# Output model returned to clients
+│   │   	└── ProductResponse		# Output model returned to clients
 │   ├── Endpoints
 │   │   └── ProductEndpoints.cs			# Minimal API endpoints grouped under `/products`
 │   ├── Entities
-│   │   └── Product.cs					# Domain model representing the Product entity
+│   │   └── Product.cs				# Domain model representing the Product entity
 │   ├── Mapping
 │   │   └── ProductDtoExtensions.cs		# Extension methods for mapping between entity and DTO
 │   ├── Repositories
 │   │   ├── IProductRepository.cs		# Repository interface for CRUD operations
 │   │   └── ProductRepository.cs		# EF Core implementation of the repository pattern
-│   ├── appsettings.json				# JSON config including SQLite connection string
-│   └── Program.cs						# Main entry point. Application startup, service registration, and endpoint mapping
+│   ├── appsettings.json			# JSON config including SQLite connection string
+│   └── Program.cs				# Main entry point. Application startup, service registration, and endpoint mapping
 ```
 
 ## 🧱 Startup Configuration
