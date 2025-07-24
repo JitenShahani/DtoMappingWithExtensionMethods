@@ -1,14 +1,16 @@
-@ManualDtoMappingDemo_HostAddress = http://localhost:5122
+@HostAddress = http://localhost:5122
 
-GET {{ManualDtoMappingDemo_HostAddress}}/products
-
-###
-
-GET {{ManualDtoMappingDemo_HostAddress}}/products/0196960d-9e4e-7585-9c74-86f60257d0e0
+GET {{HostAddress}}/products
+Content-Type: none
 
 ###
 
-POST {{ManualDtoMappingDemo_HostAddress}}/products
+GET {{HostAddress}}/products/0196960d-9e4e-7585-9c74-86f60257d0e0
+Content-Type: none
+
+###
+
+POST {{HostAddress}}/products
 Content-Type: application/json
 
 {
@@ -20,7 +22,7 @@ Content-Type: application/json
 
 ###
 
-PUT {{ManualDtoMappingDemo_HostAddress}}/products/
+PUT {{HostAddress}}/products/
 Content-Type: application/json
 
 {
@@ -33,19 +35,7 @@ Content-Type: application/json
 
 ###
 
-PUT {{ManualDtoMappingDemo_HostAddress}}/productsWithRepositoryPattern/
-Content-Type: application/json
-
-{
-  "id": "01969580-47bb-74d7-8b4e-593f0c49b3fd",
-  "name": "Gaming Mice",
-  "description": "A high-performance low-latency light-wight mice for gaming.",
-  "quantity": 22,
-  "price": 68.99
-}
-
-###
-
-DELETE {{ManualDtoMappingDemo_HostAddress}}/products/5c492ba0-3d44-402a-966e-56b578cf0648
+DELETE {{HostAddress}}/products/5c492ba0-3d44-402a-966e-56b578cf0648
+Content-Type: none
 
 ###
