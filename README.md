@@ -1095,4 +1095,4 @@ These resources provide official guidance and additional context behind the conc
 
 ---
 
-**_Stay Curious. Build Thoughtfully_**
+**_🧭 Stay Curious. Build Thoughtfully._**
